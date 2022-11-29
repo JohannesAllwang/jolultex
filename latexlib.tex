@@ -1,0 +1,34 @@
+\def\centershade[#1](#2)(#3:#4:#5)% Syntac is clear right
+    { \shade[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5) -- cycle; }
+\def\centerdraw[#1](#2)(#3:#4:#5)% Syntac is clear right
+    { \draw[#1] ($(#2)+({#5*cos(#3)},{#5*sin(#3)})$) arc (#3:#4:#5); }
+
+\def\tumb{\textcolor{TumBlue}{\blacksquare}\, }
+\def\whiteb{\textcolor{white}{\blacksquare}\, }
+
+\def\deg {\ensuremath{\,\mathrm{^\circ}}}
+\def\C {\ensuremath{\,\mathrm{^\circ C}}}
+\def\chipp{\ensuremath{\chi^{''}}}
+\def\nm {\ensuremath{\,\mathrm{nm}}}
+\def\bnm {\ensuremath{\,\mathrm{nm^{-1}}}}
+\def\mum {\ensuremath{\,\mathrm{\mu m}}}
+\def\mul {\ensuremath{\,\mathrm{\mu L}}}
+\def\mus {\ensuremath{\,\mathrm{\mu s}}}
+\def\gpl {\ensuremath{\,\mathrm{g/L}}}
+\def\gmol {\ensuremath{\,\mathrm{g/mol}}}
+\def\gpm {\ensuremath{\,\mathrm{g/mol}}}
+\def\try {\ensuremath{\mathrm{TRY}}}
+\def\ps {\ensuremath{\mathrm{PS}}}
+\def\ca {\ensuremath{\mathrm{CA}}}
+\def\cs {\ensuremath{\mathrm{CS}}}
+\def\ha {\ensuremath{\mathrm{HA}}}
+\def\Iq {\ensuremath{I(q)}}
+\tikzfading[name=middle,
+            top color=transparent!100,
+            bottom color=transparent!100,
+            middle color=transparent!20]
+\tikzfading[name=topbot,
+            left color=transparent!100,
+            right color=transparent!100,
+            middle color=transparent!20]
+% \newenvironment{\seminartalkfigure}{
